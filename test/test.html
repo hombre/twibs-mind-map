@@ -1,0 +1,37 @@
+<!--
+  ~ Copyright (c) 2018 - 2019 by Michael Brinkmann (https://www.twibs.net)
+  -->
+
+<!doctype html>
+<html lang="de" style="font-size: 14px;">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+  <title>Mind map</title>
+  <link rel="stylesheet" href="test.min.css"/>
+  <script src="test.js" defer></script>
+</head>
+<body>
+<h1>Mind map</h1>
+<div class="toolbar">
+  <button data-tmm="undo">Undo</button>
+  <button data-tmm="redo">Redo</button>
+  <button data-tmm="collapse">Collapse</button>
+  <button data-tmm="expand">Expand</button>
+  <button data-tmm="scale-down">Scale Down</button>
+  <button data-tmm="scale-up">Scale Up</button>
+  <button data-tmm="remove">Remove</button>
+  <button data-tmm="add-sibling">Add sibling</button>
+  <button data-tmm="add-child">Add child</button>
+  <button data-tmm="mark">Mark</button>
+  <button data-tmm="fit-to-container">Fit to container</button>
+  <button data-tmm="layout">Layout</button>
+  <button class="save" onclick="document.getElementById('saved').value = mm.save()">Save</button>
+</div>
+<div class="mind-map" style="height: calc(100vh - 6rem);">
+  <div class="tmm-container"></div>
+</div>
+<label for="saved">Ideas</label><textarea id="saved"></textarea>
+</body>
+</html>
